@@ -1,16 +1,17 @@
 import './App.css';
-// import {BrowseRouter as Router, Routes, Route} from 'react-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Hook1 from './components/refHook/ref_hook2';
+import Reducer from './pages/reducer';
 
 function App() {
   return (
     <div className="App">
-     <Hook1/>
-      {/* <Router>
+      <Router>
         <Routes>
-          <Route path='/' filename></Route>
+          <Route path='/reducer' element={<Reducer/>}></Route>
+          <Route path='/' element={<Hook1/>}> </Route>
         </Routes>
-      </Router> */}
+      </Router>
     </div>
   );
 }
